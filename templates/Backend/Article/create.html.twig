@@ -1,0 +1,15 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+    Création Article |
+    {{parent()}}
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid mt-4">
+        <div class="card w-50 mx-auto p-3">
+        <h1 class="text-center">CRÉATION D'UN ARTICLE</h1>
+            {% include "backend/Article/_form.html.twig" with{button_label:'Créer'}}
+        </div>
+    </div>
+{% endblock %}
